@@ -107,9 +107,11 @@ body {
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 0.5rem;
+  gap: 0.9rem 0.5rem;
+  align-items: start;
   margin: 1.5rem 0 0;
 }
+.gallery figure { margin: 0; }
 .gallery a {
   display: block;
   border: 1px solid var(--rule);
@@ -126,6 +128,13 @@ body {
   transition: transform 0.15s ease;
 }
 .gallery a:hover img { transform: scale(1.03); }
+.gallery figcaption {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-style: italic;
+  line-height: 1.3;
+  margin-top: 0.35rem;
+}
 
 /* Mobile */
 @media (max-width: 760px) {
