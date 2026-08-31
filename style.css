@@ -169,10 +169,39 @@ body {
     position: static;
     width: 100%;
     height: auto;
-    padding: 1.75rem 1.5rem 1rem;
+    padding: 1.5rem 1.25rem 1.25rem;
     border-bottom: 1px solid var(--rule);
   }
-  .nav { display: flex; flex-wrap: wrap; gap: 0.1rem 1rem; }
-  .nav .section-label { width: 100%; margin: 0.6rem 0 0.2rem; }
-  .content { padding: 1.75rem 1.5rem 3rem; max-width: 100%; }
+  .sidebar .name { font-size: 1.3rem; }
+  .sidebar .role { margin-bottom: 1rem; }
+
+  /* Nav links become clear, tappable pill buttons */
+  .nav { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .nav li { margin: 0; }
+  .nav .section-label {
+    width: 100%;
+    margin: 0.9rem 0 0.1rem;
+    font-size: 0.72rem;
+  }
+  .nav a {
+    padding: 0.55rem 0.9rem;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    font-size: 0.95rem;
+    line-height: 1;
+    color: var(--text);
+  }
+  .nav a:hover { color: var(--text); }
+  .nav a.active {
+    background: var(--active);
+    border-color: var(--active);
+    color: var(--bg);
+  }
+  .sidebar .pdf-link { margin-top: 1.25rem; font-size: 0.9rem; }
+
+  /* Content: larger, easier-to-read body; clearer heading hierarchy */
+  .content { padding: 1.75rem 1.25rem 3rem; max-width: 100%; font-size: 16px; }
+  .content h1 { font-size: 1.55rem; }
+  .content .meta { font-size: 0.9rem; }
+  .back { font-size: 0.9rem; padding: 0.2rem 0; }
 }
