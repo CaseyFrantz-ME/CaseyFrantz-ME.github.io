@@ -115,8 +115,8 @@ body {
 @media (max-width: 760px) {
   .about-photo {
     float: none;
-    width: 100%;
-    max-width: 18rem;
+    width: 55%;
+    max-width: 12rem;
     margin: 0 0 1.25rem;
   }
 }
