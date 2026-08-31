@@ -188,6 +188,7 @@ body {
     border: 1px solid var(--rule);
     border-radius: 999px;
     font-size: 0.95rem;
+    font-weight: 400;
     line-height: 1;
     color: var(--text);
   }
@@ -196,6 +197,7 @@ body {
     background: var(--active);
     border-color: var(--active);
     color: var(--bg);
+    font-weight: 400;
   }
   .sidebar .pdf-link { margin-top: 1.25rem; font-size: 0.9rem; }
 
