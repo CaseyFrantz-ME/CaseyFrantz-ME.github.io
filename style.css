@@ -94,6 +94,33 @@ body {
 }
 .content p { margin: 0 0 1rem; }
 .content a { color: var(--link); }
+.about-photo {
+  float: right;
+  width: 15rem;
+  max-width: 45%;
+  margin: 0.2rem 0 1rem 1.5rem;
+}
+.about-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.about-photo figcaption {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-style: italic;
+  margin-top: 0.35rem;
+}
+@media (max-width: 760px) {
+  .about-photo {
+    float: none;
+    width: 100%;
+    max-width: 18rem;
+    margin: 0 0 1.25rem;
+  }
+}
+
 .back {
   display: inline-block;
   font-size: 0.8rem;
