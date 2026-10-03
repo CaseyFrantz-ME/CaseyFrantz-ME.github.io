@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Motor Life Test Chamber - Casey Frantz</title>
+  <meta name="description" content="Casey Frantz, mechanical engineering student at the University of Washington. Robotics and motors." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+  <nav class="sidebar">
+    <p class="name"><a href="index.html">Casey Frantz</a></p>
+    <p class="role">Mechanical engineering student, University of Washington</p>
+    <ul class="nav">
+      <li><a href="index.html">About</a></li>
+      <li class="section-label">Projects</li>
+      <li><a href="motor-test-chamber.html" class="active" aria-current="page">Motor Test Chamber</a></li>
+      <li><a href="mr30-soldering.html">MR30 Soldering Machine</a></li>
+      <li><a href="tennis-buddy.html">Tennis Buddy</a></li>
+      <li><a href="fall-prevention-harness.html">Fall-Prevention Harness</a></li>
+      <li><a href="arc-robotics.html">ARC Robotics</a></li>
+      <li><a href="frc-lead.html">FRC Mechanical Lead</a></li>
+      <li><a href="frc-mentor.html">FRC Design Mentor</a></li>
+      <li><a href="nerf-turret.html">Nerf Turret</a></li>
+      <li><a href="swerve-drive.html">Swerve Drive</a></li>
+      <li><a href="flashlight.html">Flashlight</a></li>
+      <li><a href="bldc-motor.html">BLDC Motor</a></li>
+      <li><a href="battlebot.html">Battlebot</a></li>
+    </ul>
+    <p class="pdf-link"><a href="casey-frantz-portfolio.pdf">Portfolio PDF &rarr;</a></p>
+  </nav>
+  <main class="content">
+    <a class="back" href="index.html">&larr; Casey Frantz</a>
+    <h1>Motor Life Test Chamber</h1>
+    <p class="meta">Internship</p>
+    <p>An endurance test only helps if the rig can keep running. This chamber tests eight motors at once, using throttle-blip profiles and measurements of current and voltage at the ESC. An actuator rotates the motors to reproduce gyroscopic loading in flight. My work focused on cooling, power distribution, temperature control, and the operator workflow.</p>
+    <p>I built cooling manifolds into the 3D printed motor mounts, with a single air fitting feeding each mount. Bringing the airflow directly to the motor cut cooling time in half.</p>
+    <p>I also designed the power supply box layout and built its wiring: nine supplies totaling roughly 15 kW, nine power harnesses, and CAN connections to the actuators and motors. The layout keeps the supplies compact while leaving every terminal accessible for service. At the time of this portfolio, the box had completed more than 13,000 official three-minute throttle-blip cycles without shorts, wiring failures, or downtime.</p>
+    <p>To automate temperature cycling, I captured the air conditioner&#x27;s infrared commands and retransmitted them with an Arduino and IR transmitter. I tuned a closed-loop PID controller and added hysteresis to avoid short-cycling the compressor.</p>
+    <p>The workbench needed attention too. I mapped the workflow, wrote an SOP, and reorganized the space with dovetail assembly jigs and assigned locations for motors awaiting shipping. Across these improvements, overall cycle time fell from 10 minutes to four.</p>
+    <div class="gallery">
+      <figure><a href="img/chamber-cad.jpg" target="_blank" rel="noopener"><img src="img/chamber-cad.jpg" width="371" height="518" alt="Chamber layout in CAD" loading="lazy"></a><figcaption>Chamber layout in CAD</figcaption></figure>
+      <figure><a href="img/chamber-build.jpg" target="_blank" rel="noopener"><img src="img/chamber-build.jpg" width="451" height="800" alt="The assembled motor test chamber" loading="lazy"></a><figcaption>The assembled motor test chamber</figcaption></figure>
+      <figure><a href="img/chamber-cooling.jpg" target="_blank" rel="noopener"><img src="img/chamber-cooling.jpg" width="347" height="291" alt="Cooling channels integrated into the motor mount" loading="lazy"></a><figcaption>Cooling channels integrated into the motor mount</figcaption></figure>
+      <figure><a href="img/chamber-power.jpg" target="_blank" rel="noopener"><img src="img/chamber-power.jpg" width="800" height="451" alt="Power supply box and wiring" loading="lazy"></a><figcaption>Power supply box and wiring</figcaption></figure>
+      <figure><a href="img/chamber-control.jpg" target="_blank" rel="noopener"><img src="img/chamber-control.jpg" width="1200" height="676" alt="Temperature control interface" loading="lazy"></a><figcaption>Temperature control interface</figcaption></figure>
+      <figure><a href="img/chamber-ir.jpg" target="_blank" rel="noopener"><img src="img/chamber-ir.jpg" width="676" height="1200" alt="Arduino and infrared control hardware" loading="lazy"></a><figcaption>Arduino and infrared control hardware</figcaption></figure>
+      <figure><a href="img/chamber-before.jpg" target="_blank" rel="noopener"><img src="img/chamber-before.jpg" width="1200" height="676" alt="Operator workspace before the improvements" loading="lazy"></a><figcaption>Operator workspace before the improvements</figcaption></figure>
+      <figure><a href="img/chamber-after.jpg" target="_blank" rel="noopener"><img src="img/chamber-after.jpg" width="800" height="451" alt="Reorganized workspace with assembly jigs" loading="lazy"></a><figcaption>Reorganized workspace with assembly jigs</figcaption></figure>
+    </div>
+  </main>
+  </div>
+</body>
+</html>

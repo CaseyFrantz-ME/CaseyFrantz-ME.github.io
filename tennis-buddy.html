@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tennis Buddy - Casey Frantz</title>
+  <meta name="description" content="Casey Frantz, mechanical engineering student at the University of Washington. Robotics and motors." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+  <nav class="sidebar">
+    <p class="name"><a href="index.html">Casey Frantz</a></p>
+    <p class="role">Mechanical engineering student, University of Washington</p>
+    <ul class="nav">
+      <li><a href="index.html">About</a></li>
+      <li class="section-label">Projects</li>
+      <li><a href="motor-test-chamber.html">Motor Test Chamber</a></li>
+      <li><a href="mr30-soldering.html">MR30 Soldering Machine</a></li>
+      <li><a href="tennis-buddy.html" class="active" aria-current="page">Tennis Buddy</a></li>
+      <li><a href="fall-prevention-harness.html">Fall-Prevention Harness</a></li>
+      <li><a href="arc-robotics.html">ARC Robotics</a></li>
+      <li><a href="frc-lead.html">FRC Mechanical Lead</a></li>
+      <li><a href="frc-mentor.html">FRC Design Mentor</a></li>
+      <li><a href="nerf-turret.html">Nerf Turret</a></li>
+      <li><a href="swerve-drive.html">Swerve Drive</a></li>
+      <li><a href="flashlight.html">Flashlight</a></li>
+      <li><a href="bldc-motor.html">BLDC Motor</a></li>
+      <li><a href="battlebot.html">Battlebot</a></li>
+    </ul>
+    <p class="pdf-link"><a href="casey-frantz-portfolio.pdf">Portfolio PDF &rarr;</a></p>
+  </nav>
+  <main class="content">
+    <a class="back" href="index.html">&larr; Casey Frantz</a>
+    <h1>Tennis Buddy</h1>
+    <p class="meta">24-hour hardware hackathon</p>
+    <p>We built a tennis training robot in 24 hours, including machining its polycarbonate plates. Tennis Buddy combines a mecanum drivetrain, a flywheel shooter, an adjustable hood, and gravity-fed loading, with onboard cameras and a laptop interface.</p>
+    <p>I led the robot design and took the shooter and hood from concept to finished hardware. I also helped bring the drivetrain, loading, and controls together before the hackathon ended.</p>
+    <p>Two 4,000 W BLDC skateboard motors drive the flywheels. Changing their relative speeds gives the ball topspin or backspin; matching them produces a flat shot. A compliant-wheel indexer feeds one ball at a time from the nine-ball magazine.</p>
+    <p>The hood is the part I&#x27;m most proud of. A servo drives it through herringbone gears to reduce backlash and adjust the launch angle repeatably within a tight space. Mecanum wheels provide omnidirectional movement, and an ESP32 handles Wi-Fi control.</p>
+    <div class="gallery">
+      <figure><a href="img/tennis-interface.jpg" target="_blank" rel="noopener"><img src="img/tennis-interface.jpg" width="1200" height="676" alt="Tennis Buddy with its laptop interface" loading="lazy"></a><figcaption>Tennis Buddy with its laptop interface</figcaption></figure>
+      <figure><a href="img/tennis-build.jpg" target="_blank" rel="noopener"><img src="img/tennis-build.jpg" width="1200" height="676" alt="The assembled robot and nine-ball magazine" loading="lazy"></a><figcaption>The assembled robot and nine-ball magazine</figcaption></figure>
+      <figure><a href="img/tennis-section.jpg" target="_blank" rel="noopener"><img src="img/tennis-section.jpg" width="407" height="409" alt="Side view of the shooter and actuated hood" loading="lazy"></a><figcaption>Side view of the shooter and actuated hood</figcaption></figure>
+      <figure><a href="img/tennis-cad.jpg" target="_blank" rel="noopener"><img src="img/tennis-cad.jpg" width="447" height="379" alt="Full robot assembly in CAD" loading="lazy"></a><figcaption>Full robot assembly in CAD</figcaption></figure>
+    </div>
+  </main>
+  </div>
+</body>
+</html>

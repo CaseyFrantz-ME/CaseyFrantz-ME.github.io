@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MR30 Wire Harness Soldering Machine - Casey Frantz</title>
+  <meta name="description" content="Casey Frantz, mechanical engineering student at the University of Washington. Robotics and motors." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+  <nav class="sidebar">
+    <p class="name"><a href="index.html">Casey Frantz</a></p>
+    <p class="role">Mechanical engineering student, University of Washington</p>
+    <ul class="nav">
+      <li><a href="index.html">About</a></li>
+      <li class="section-label">Projects</li>
+      <li><a href="motor-test-chamber.html">Motor Test Chamber</a></li>
+      <li><a href="mr30-soldering.html" class="active" aria-current="page">MR30 Soldering Machine</a></li>
+      <li><a href="tennis-buddy.html">Tennis Buddy</a></li>
+      <li><a href="fall-prevention-harness.html">Fall-Prevention Harness</a></li>
+      <li><a href="arc-robotics.html">ARC Robotics</a></li>
+      <li><a href="frc-lead.html">FRC Mechanical Lead</a></li>
+      <li><a href="frc-mentor.html">FRC Design Mentor</a></li>
+      <li><a href="nerf-turret.html">Nerf Turret</a></li>
+      <li><a href="swerve-drive.html">Swerve Drive</a></li>
+      <li><a href="flashlight.html">Flashlight</a></li>
+      <li><a href="bldc-motor.html">BLDC Motor</a></li>
+      <li><a href="battlebot.html">Battlebot</a></li>
+    </ul>
+    <p class="pdf-link"><a href="casey-frantz-portfolio.pdf">Portfolio PDF &rarr;</a></p>
+  </nav>
+  <main class="content">
+    <a class="back" href="index.html">&larr; Casey Frantz</a>
+    <h1>MR30 Wire Harness Soldering Machine</h1>
+    <p class="meta">Internship</p>
+    <p>The purchased soldering machine was scrapping more than 70% of our MR30 wire harnesses. I rebuilt the process around the hardware that worked and had a working prototype in a weekend. Scrap fell to 10-20%, with the machine producing one harness every 12 seconds.</p>
+    <p>I reverse-engineered the tip-down mechanism and designed the fixtures in Onshape parametric part studios. An X-Y optics table lets us adjust alignment down to 0.01 mm to accommodate part tolerances. Two pneumatic actuators move the iron tip and solder needles.</p>
+    <p>Operators set temperature, dwell, needle timing, and extrusion length on an ESP32 Cheap Yellow Display board. I handled all of the mechanical design and fixture construction. A collaborator wrote most of the software; I set up SSH, improved calibration, and flashed stall protection and CoolStep onto the stepper driver board.</p>
+    <div class="gallery">
+      <figure><a href="img/soldering-machine.jpg" target="_blank" rel="noopener"><img src="img/soldering-machine.jpg" width="1200" height="676" alt="The rebuilt harness soldering machine" loading="lazy"></a><figcaption>The rebuilt harness soldering machine</figcaption></figure>
+      <figure><a href="img/soldering-cad.jpg" target="_blank" rel="noopener"><img src="img/soldering-cad.jpg" width="467" height="423" alt="Fixture and actuator layout in Onshape" loading="lazy"></a><figcaption>Fixture and actuator layout in Onshape</figcaption></figure>
+      <figure><a href="img/soldering-display.jpg" target="_blank" rel="noopener"><img src="img/soldering-display.jpg" width="800" height="451" alt="Operator display for the soldering profile" loading="lazy"></a><figcaption>Operator display for the soldering profile</figcaption></figure>
+      <figure><a href="img/soldering-fixture.jpg" target="_blank" rel="noopener"><img src="img/soldering-fixture.jpg" width="1200" height="676" alt="Connector fixture and soldering mechanism" loading="lazy"></a><figcaption>Connector fixture and soldering mechanism</figcaption></figure>
+    </div>
+  </main>
+  </div>
+</body>
+</html>
