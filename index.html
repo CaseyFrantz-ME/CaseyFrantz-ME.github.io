@@ -5,13 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Casey Frantz</title>
   <meta name="description" content="Casey Frantz, mechanical engineering student at the University of Washington. Robotics and motors." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&display=swap" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="home">
+  <header class="hero">
+    <div class="hero-frame">
+      <img class="hero-img" src="img/banner.jpg" alt="Casey Frantz working on the team's robot in the pits at the FIRST Robotics world championship">
+      <div class="hero-card">
+        <p class="eyebrow">Portfolio</p>
+        <h1>Casey Frantz</h1>
+        <p class="hero-sub">Mechanical engineering student, University of Washington</p>
+      </div>
+    </div>
+  </header>
   <div class="layout">
   <nav class="sidebar">
-    <p class="name"><a href="index.html">Casey Frantz</a></p>
-    <p class="role">Mechanical engineering student, University of Washington</p>
     <ul class="nav">
       <li><a href="index.html" class="active" aria-current="page">About</a></li>
       <li class="section-label">Projects</li>
@@ -31,13 +42,30 @@
     <p class="pdf-link"><a href="casey-frantz-portfolio.pdf">Portfolio PDF &rarr;</a></p>
   </nav>
   <main class="content">
-    <h1>Casey Frantz</h1>
-    <p class="meta">Mechanical engineering student, University of Washington</p>
-    <figure class="about-photo"><img src="img/casey.jpg" alt="Casey Frantz kneeling with the ARC robot on the University of Washington campus"><figcaption>With the ARC robot on UW's campus.</figcaption></figure>
-    <p>I'm a mechanical engineering student at the University of Washington. I design mechanisms, make parts, and work through the details that turn a CAD model into reliable hardware.</p>
-    <p>During my internship, I improved a motor endurance test chamber and built a machine for soldering MR30 wire harnesses. That work covered cooling, wiring, controls, fixtures, and the operator process. I like getting those pieces to work together, then seeing the difference in cycle time and reliability.</p>
-    <p>Robotics is where much of this started. I led manufacturing for a FIRST Robotics team that reached the world championship and later mentored students through their own designs. At UW, I've worked on the ARC robot's two-axis wrist, built Tennis Buddy in a 24-hour hackathon, and designed a fall-prevention harness concept with a teammate for an ASME CADathon.</p>
-    <p>Each project has its own page with photos and details about my role. You can also browse the updated <a href="casey-frantz-portfolio.pdf">visual portfolio (PDF)</a>.</p>
+    <div class="prose">
+      <h2>About</h2>
+      <p>I'm a mechanical engineering student at the University of Washington. I design mechanisms, make parts, and work through the details that turn a CAD model into reliable hardware.</p>
+      <p>During my internship, I improved a motor endurance test chamber and built a machine for soldering MR30 wire harnesses. That work covered cooling, wiring, controls, fixtures, and the operator process. I like getting those pieces to work together, then seeing the difference in cycle time and reliability.</p>
+      <p>Robotics is where much of this started. I led manufacturing for a FIRST Robotics team that reached the world championship and later mentored students through their own designs. At UW, I've worked on the ARC robot's two-axis wrist, built Tennis Buddy in a 24-hour hackathon, and designed a fall-prevention harness concept with a teammate for an ASME CADathon.</p>
+      <p>Each project has its own page with photos and details about my role. You can also browse the updated <a href="casey-frantz-portfolio.pdf">visual portfolio (PDF)</a>.</p>
+    </div>
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <a class="card" href="motor-test-chamber.html"><div class="card-img"><img src="img/chamber-build.jpg" alt="" loading="lazy"></div><div class="card-body"><div class="card-title">Motor Life Test Chamber</div><div class="card-meta">Internship</div></div></a>
+        <a class="card" href="mr30-soldering.html"><div class="card-img"><img src="img/soldering-machine.jpg" alt="" loading="lazy"></div><div class="card-body"><div class="card-title">MR30 Soldering Machine</div><div class="card-meta">Internship</div></div></a>
+        <a class="card" href="tennis-buddy.html"><div class="card-img"><img src="img/tennis-build.jpg" alt="" loading="lazy"></div><div class="card-body"><div class="card-title">Tennis Buddy</div><div class="card-meta">24-hour hardware hackathon</div></div></a>
+        <a class="card" href="fall-prevention-harness.html"><div class="card-img"><img src="img/harness-carrier.jpg" alt="" loading="lazy"></div><div class="card-body"><div class="card-title">Fall-Prevention Harness</div><div class="card-meta">ASME CADathon · First place</div></div></a>
+        <a class="card" href="arc-robotics.html"><div class="card-img"><img src="img/arc-robot.jpg" alt="" loading="lazy"></div><div class="card-body"><div class="card-title">ARC Robotics</div><div class="card-meta">UW · Advanced Robotics</div></div></a>
+        <a class="card" href="frc-lead.html"><div class="card-img"><img src="img/lead-robot.jpg" alt="" loading="lazy"></div><div class="card-body"><div class="card-title">FRC Mechanical Lead</div><div class="card-meta">2023 season</div></div></a>
+        <a class="card" href="frc-mentor.html"><div class="card-img"><img src="img/mentor-robot.jpg" alt="" loading="lazy"></div><div class="card-body"><div class="card-title">FRC Design Mentor</div><div class="card-meta">2025 season</div></div></a>
+        <a class="card" href="nerf-turret.html"><div class="card-img"><img src="img/turret-photo.jpg" alt="" loading="lazy"></div><div class="card-body"><div class="card-title">Nerf Turret</div><div class="card-meta">Hackathon · 2nd of 40 teams</div></div></a>
+        <a class="card" href="swerve-drive.html"><div class="card-img"><img src="img/swerve-modules.jpg" alt="" loading="lazy"></div><div class="card-body"><div class="card-title">Swerve Drive</div><div class="card-meta">Personal design project</div></div></a>
+        <a class="card" href="flashlight.html"><div class="card-img"><img src="img/flashlight-fea.jpg" alt="" loading="lazy"></div><div class="card-body"><div class="card-title">Flashlight</div><div class="card-meta">Class project</div></div></a>
+        <a class="card" href="bldc-motor.html"><div class="card-img"><img src="img/bldc-print.jpg" alt="" loading="lazy"></div><div class="card-body"><div class="card-title">BLDC Motor</div><div class="card-meta">Learning project, in progress</div></div></a>
+        <a class="card" href="battlebot.html"><div class="card-img"><img src="img/battlebot-cad.jpg" alt="" loading="lazy"></div><div class="card-body"><div class="card-title">Battlebot</div><div class="card-meta">Crimson Robotics</div></div></a>
+      </div>
+    </section>
   </main>
   </div>
 </body>
