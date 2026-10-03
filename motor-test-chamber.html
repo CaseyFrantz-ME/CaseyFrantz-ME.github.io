@@ -37,10 +37,11 @@
     <a class="back" href="index.html">&larr; About</a>
     <h1>Motor Life Test Chamber</h1>
     <p class="meta">Internship</p>
-    <p>An eight-motor endurance rig needed faster turnaround and reliable power and temperature control.</p>
-    <p>I improved motor cooling, built the power distribution box, automated the AC, and streamlined the operator workflow.</p>
-    <p>I integrated air channels into the printed mounts, wired nine supplies totaling roughly 15 kW, and added Arduino-based IR control with tuned PID and compressor hysteresis. I also wrote an SOP and reorganized the bench around assembly jigs.</p>
-    <p>Cooling time halved, and overall cycle time fell from 10 minutes to four. At the time of the portfolio, the power box had completed 13,000+ three-minute throttle-blip cycles without shorts, wiring failures, or downtime.</p>
+    <p>This chamber tests eight motors at once, running throttle-blip profiles and measuring current and voltage at the ESC. An actuator rotates the motors to reproduce gyroscopic loading in flight. My work focused on cooling, power distribution, temperature control, and the operator workflow.</p>
+    <p>I built cooling manifolds into the 3D printed motor mounts, fed by a single air fitting per mount. Direct airflow to the motor cut cooling time in half.</p>
+    <p>I designed and wired the power supply box: nine supplies totaling roughly 15 kW, nine power harnesses, and CAN connections to the actuators and motors. The compact layout keeps every terminal accessible for service. At the time of this portfolio, the box had completed more than 13,000 official three-minute throttle-blip cycles without shorts, wiring failures, or downtime.</p>
+    <p>To automate temperature cycling, I captured the air conditioner&#x27;s infrared commands and retransmitted them with an Arduino and IR transmitter. I tuned a closed-loop PID controller and added hysteresis to avoid short-cycling the compressor.</p>
+    <p>I mapped the workflow, wrote an SOP, and reorganized the space with dovetail assembly jigs and assigned locations for motors awaiting shipping. Together, these improvements cut overall cycle time from 10 minutes to four.</p>
     <div class="gallery">
       <figure><a href="img/chamber-cad.jpg" target="_blank" rel="noopener"><img src="img/chamber-cad.jpg" width="371" height="518" alt="Chamber layout in CAD" loading="lazy"></a><figcaption>Chamber layout in CAD</figcaption></figure>
       <figure><a href="img/chamber-build.jpg" target="_blank" rel="noopener"><img src="img/chamber-build.jpg" width="451" height="800" alt="The assembled motor test chamber" loading="lazy"></a><figcaption>The assembled motor test chamber</figcaption></figure>
